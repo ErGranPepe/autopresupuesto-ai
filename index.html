@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPresupuesto.ai - Presupuestos de Reformas en Segundos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.6; color: #333; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; font-weight: 700; }
+        .hero p { font-size: 1.3em; margin-bottom: 30px; opacity: 0.95; }
+        .cta-button { background: #ff6b6b; color: white; padding: 18px 45px; font-size: 1.2em; border: none; border-radius: 50px; cursor: pointer; font-weight: 600; transition: all 0.3s; text-decoration: none; display: inline-block; }
+        .cta-button:hover { background: #ff5252; transform: scale(1.05); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 60px 0; }
+        .feature-card { background: #f8f9fa; padding: 35px; border-radius: 15px; text-align: center; transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .feature-icon { font-size: 3em; margin-bottom: 15px; }
+        .feature-card h3 { margin: 15px 0; color: #667eea; }
+        .pricing { background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); padding: 60px 20px; text-align: center; }
+        .price-box { background: white; padding: 50px; border-radius: 20px; max-width: 500px; margin: 30px auto; box-shadow: 0 20px 60px rgba(0,0,0,0.1); }
+        .price { font-size: 4em; font-weight: 700; color: #667eea; margin: 20px 0; }
+        .price-small { font-size: 1.5em; color: #666; }
+        .contact-form { background: white; padding: 40px; border-radius: 15px; max-width: 600px; margin: 30px auto; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #555; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1em; }
+        .form-group textarea { min-height: 120px; }
+        .submit-btn { background: #667eea; color: white; padding: 15px 40px; border: none; border-radius: 50px; font-size: 1.1em; font-weight: 600; cursor: pointer; width: 100%; transition: all 0.3s; }
+        .submit-btn:hover { background: #5568d3; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 30px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🚀 AutoPresupuesto.ai</h1>
+        <p>Genera presupuestos de reformas profesionales en segundos con Inteligencia Artificial</p>
+        <a href="#contacto" class="cta-button">Solicitar Demo Gratis</a>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 50px; color: #2c3e50;">¿Cómo funciona?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎤</div>
+                <h3>1. Describe la Reforma</h3>
+                <p>Graba una nota de voz o escribe: "Alicatar baño de 20m² y poner suelo"</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>2. La IA Calcula</h3>
+                <p>Nuestro sistema calcula materiales, horas de mano de obra y márgenes automáticamente</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3>3. Presupuesto Listo</h3>
+                <p>Recibe un PDF profesional y maquetado en segundos</p>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px;">Precio Especial de Lanzamiento</h2>
+            <div class="price-box">
+                <div class="price-small">Solo</div>
+                <div class="price">297€</div>
+                <div class="price-small">/ mes</div>
+                <p style="margin: 25px 0; font-size: 1.2em; color: #555;">✅ Presupuestos ilimitados<br>✅ Base de datos de precios actualizada<br>✅ Exportación PDF profesional<br>✅ Soporte prioritario</p>
+                <a href="#contacto" class="cta-button">Empezar Ahora</a>
+            </div>
+        </div>
+
+        <div id="contacto" class="contact-form">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #2c3e50;">Solicita tu Demo Gratuita</h2>
+            <form action="https://formspree.io/f/xpwzdvnj" method="POST">
+                <div class="form-group">
+                    <label>Nombre de tu Empresa *</label>
+                    <input type="text" name="empresa" required>
+                </div>
+                <div class="form-group">
+                    <label>Tu Nombre *</label>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Teléfono *</label>
+                    <input type="tel" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label>¿Cuántos presupuestos haces al mes?</label>
+                    <input type="text" name="presupuestos">
+                </div>
+                <button type="submit" class="submit-btn">Solicitar Demo Gratis</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 AutoPresupuesto.ai | Desarrollado por Mario Díaz | <a href="mailto:mariodiazgomez05@gmail.com" style="color: #667eea;">Contacto</a></p>
+    </footer>
+</body>
+</html>
